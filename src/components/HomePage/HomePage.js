@@ -1,10 +1,30 @@
 import React from "react";
 import "../style.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
-import "../../../node_modules/bootstrap/dist/js/bootstrap.min.js"
-import "../../../node_modules/bootstrap/dist/js/popper.min.js"
+import { faCalendarAlt, faChevronRight, faClock, faMapMarkerAlt, faSearch, faStar, faStarHalf } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../../../node_modules/bootstrap/dist/js/bootstrap.min.js";
 import '../../../node_modules/font-awesome/css/font-awesome.min.css'; 
+
+//images 
+import threeOne from "../img/three/1.png"
+import threeTwo from "../img/three/2.png"
+import threeThree from "../img/three/3.png"
+import specialityA from "../img/specialities/1.png"
+import specialityB from "../img/specialities/2.png"
+import specialityC from "../img/specialities/3.png"
+import specialityD from "../img/specialities/4.png"
+import specialityE from "../img/specialities/5.png"
+import specialityF from "../img/specialities/6.png"
+import specialityG from "../img/specialities/7.png"
+import main from "../img/app/main.png"
+import blogB from "../img/shapes/blog-img02.jpg"
+import blogC from "../img/shapes/blog-img03.jpg"
+import bookDocA from "../img/doctors/book-doc-01.jpg"
+import bookDocB from "../img/doctors/book-doc-02.jpg"
+import bookDocC from "../img/doctors/book-doc-03.jpg"
+import bookDocD from "../img/doctors/book-doc-04.jpg"
+import bookDocE from "../img/doctors/book-doc-05.jpg"
 
 const HomePage = () => {
     return ( 
@@ -32,7 +52,7 @@ const HomePage = () => {
 							</div>
 						</div>
 						
-                        <form className="form-design" action="../../../public/webpages/list.html">
+                        <form className="form-design" action="webpages/list.html">
                         
                         <div className="form-group search-location">
                             <input type="text" className="form-control" placeholder="Search Location" />
@@ -44,7 +64,7 @@ const HomePage = () => {
                             <span className="form-text">Ex : Dental or Sugar Check up etc</span>
                         </div>
 
-                        <button id="search-btn" type="submit" className="btn btn-primary search-btn mt-0"><i className="fas fa-search"></i><span>Search</span></button>
+                        <button id="search-btn" type="submit" className="btn btn-primary search-btn mt-0"><FontAwesomeIcon icon={faSearch} /><span>Search</span></button>
                     
                         </form>
 						
@@ -61,7 +81,7 @@ const HomePage = () => {
                             <div className="col-md-4">
 								<div className="pop-box">
 									<div className="top-section">
-										<img style={{borderRadius: ".5rem"}} src="../../../public/img//three/1.png" alt="doc-img"/>
+										<img style={{borderRadius: ".5rem"}} src={threeOne} alt="book-doc"/>
 									</div>
                                     <div className="body-section">
                                         <h3 style={{marginTop: "8px"}}>Assess Your Health</h3>
@@ -74,7 +94,7 @@ const HomePage = () => {
                             <div className="col-md-4">
                                 <div className="pop-box">
                                     <div className="top-section">
-                                        <img style={{borderRadius: ".5rem"}} src="../../../public/img//three/2.png" alt="doc-img" />
+                                        <img style={{borderRadius: ".5rem"}} src={threeTwo} alt="book-doc" />
                                     </div>
                                     <div className="body-section">
                                         <h3>Pregnancy packages</h3>
@@ -87,7 +107,7 @@ const HomePage = () => {
                             <div className="col-md-4">
                                 <div className="pop-box">
                                     <div className="top-section">
-                                        <img style={{borderRadius: ".5rem"}} src="../../../public/img//three/3.png" alt="doc-img" />
+                                        <img style={{borderRadius: ".5rem"}} src={threeThree} alt="book-doc" />
                                     </div>
                                     <div className="body-section">
                                         <h3>Health Insurance @ 50 INR</h3>
@@ -117,7 +137,7 @@ const HomePage = () => {
 					<div className="specialities-slider slider">
 							<div className="speicality-item text-center">
 									<div className="speicality-img">
-										<img src="../../../public/img/specialities/specialities-01.png" className="img-fluid" alt="Speciality"/>
+										<img src={specialityA} className="img-fluid" alt="Speciality"/>
 									</div>
 									<p>Urology</p>
 								</div>	
@@ -126,7 +146,7 @@ const HomePage = () => {
 				
 								<div className="speicality-item text-center">
 									<div className="speicality-img">
-										<img src="../../../public/img/specialities/specialities-02.png" className="img-fluid" alt="Speciality"/>
+										<img src={specialityB} className="img-fluid" alt="Speciality"/>
 									</div>
 									<p>Neurology</p>	
 								</div>							
@@ -135,7 +155,7 @@ const HomePage = () => {
 				
 								<div className="speicality-item text-center">
 									<div className="speicality-img">
-										<img src="../../../public/img/specialities/specialities-03.png" className="img-fluid" alt="Speciality"/>
+										<img src={specialityC} className="img-fluid" alt="Speciality"/>
 									</div>	
 									<p>Orthopaedics</p>	
 								</div>							
@@ -144,7 +164,7 @@ const HomePage = () => {
 				
 								<div className="speicality-item text-center">
 									<div className="speicality-img">
-										<img src="../../../public/img/specialities/specialities-04.png" className="img-fluid" alt="Speciality"/>
+										<img src={specialityD} className="img-fluid" alt="Speciality"/>
 									</div>	
 									<p>Cardiologist</p>	
 								</div>							
@@ -153,7 +173,7 @@ const HomePage = () => {
 				
 								<div className="speicality-item text-center">
 									<div className="speicality-img">
-										<img src="../../../public/img/specialities/specialities-05.png" className="img-fluid" alt="Speciality"/>
+										<img src={specialityE} className="img-fluid" alt="Speciality"/>
 									</div>	
 									<p>Dentist</p>
 								</div>							
@@ -162,7 +182,7 @@ const HomePage = () => {
 				
 								<div className="speicality-item text-center">
 									<div className="speicality-img">
-										<img src="../../../public/img/specialities/specialities-06.png" className="img-fluid" alt="Speciality"/>
+										<img src={specialityF} className="img-fluid" alt="Speciality"/>
 
 									</div>	
 									<p>Ophthalmologist</p>
@@ -172,7 +192,7 @@ const HomePage = () => {
 				
 								<div className="speicality-item text-center">
 									<div className="speicality-img">
-										<img src="../../../public/img/specialities/specialities-07.png" className="img-fluid" alt="Speciality" />
+										<img src={specialityG} className="img-fluid" alt="Speciality" />
 
 									</div>	
 									<p>Paediatrics</p>
@@ -191,7 +211,7 @@ const HomePage = () => {
 					</div>
 					<div className="col-md-8">
 						<div className="section-header text-center">
-							<img src="../../../public/img/app/main.png" className="img-fluid" alt="Feature"/>
+							<img src={main} className="img-fluid" alt="Feature"/>
 						</div>
 						</div>
 				
@@ -210,7 +230,7 @@ const HomePage = () => {
 						<div className="book-slider slider">
 							<div className="profile-widget">
 								<a href="doctor-profile.html">
-									<img src="../../../public/img/doctors/book-doc-01.jpg" alt="doc-img" />
+									<img src={bookDocA} alt="book-doc" />
 								</a>
 								<div className="pro-content">
 									<div  className="row row-sm">	
@@ -218,7 +238,7 @@ const HomePage = () => {
 											<span className="amt">$20 - $50</span>
 										</div>
 										<div className="col-md-6 text-right">
-											<a href="#" className="star"><i className="fas fa-star"></i></a>	
+											<a href="!#" className="star"><FontAwesomeIcon icon={faStar} /></a>	
 										</div>
 									</div>
 									<div className="provider-info">
@@ -226,29 +246,29 @@ const HomePage = () => {
 										<div>
 											<h5>PSICOLOGIST </h5>
 											<div className="rating">
-												<i className="fas fa-star filled"></i>
-												<i className="fas fa-star filled"></i>
-												<i className="fas fa-star filled"></i>
-												<i className="fas fa-star filled"></i>
-												<i className="fas fa-star"></i>
+												<FontAwesomeIcon icon={faStar} />
+												<FontAwesomeIcon icon={faStar} />
+												<FontAwesomeIcon icon={faStar} />
+												<FontAwesomeIcon icon={faStar} />
+												<FontAwesomeIcon icon={faStarHalf} />
 												<span className="d-inline-block average-rating">3.5</span>
 											</div>
 										</div>
-										<a href="#" className="side-arrow">
-											<i className="fas fa-chevron-right"></i>
+										<a href="!#" className="side-arrow">
+											<FontAwesomeIcon icon={faChevronRight} />
 										</a>
 										<div className="content-info">
 											<ul className="available-info">
 												<li>
-													<i className="fas fa-map-marker-alt"></i> Georgia, USA
+												<FontAwesomeIcon icon={faMapMarkerAlt} /> Georgia, USA
 												</li>
 												<li>
-													<i className="far fa-clock"></i> 450 Consultations
+												<FontAwesomeIcon icon={faClock} /> 450 Consultations
 												</li>
 											</ul>
 											<div className="row row-sm">
 												<div className="col-6">
-													<a href="javascript:void(0);" className="btn view-btn" tabIndex="0">View Profile</a>
+													<a href="!#" className="btn view-btn" tabIndex="0">View Profile</a>
 												</div>
 												<div className="col-6">
 													<a href="booking.html" className="btn book-btn" tabIndex="0">Book Now</a>
@@ -260,7 +280,7 @@ const HomePage = () => {
 							</div>
 							<div className="profile-widget">
 								<a href="doctor-profile.html">
-									<img src="../../../public/img/doctors/book-doc-02.jpg" alt="doc-img" />
+									<img src={bookDocB} alt="book-doc" />
 								</a>
 								<div className="pro-content">
 									<div  className="row row-sm">	
@@ -268,7 +288,7 @@ const HomePage = () => {
 											<span className="amt">$20 - $50</span>
 										</div>
 										<div className="col-md-6 text-right">
-											<a href="#" className="star"><i className="fas fa-star"></i></a>	
+											<a href="!#" className="star"><FontAwesomeIcon icon={faStar} /></a>	
 										</div>
 									</div>
 									<div className="provider-info">
@@ -276,24 +296,24 @@ const HomePage = () => {
 										<div>
 											<h5>PSICOLOGIST </h5>
 											<div className="rating">
-												<i className="fas fa-star filled"></i>
-												<i className="fas fa-star filled"></i>
-												<i className="fas fa-star filled"></i>
-												<i className="fas fa-star filled"></i>
-												<i className="fas fa-star"></i>
+												<FontAwesomeIcon icon={faStar} />
+												<FontAwesomeIcon icon={faStar} />
+												<FontAwesomeIcon icon={faStar} />
+												<FontAwesomeIcon icon={faStar} />
+												<FontAwesomeIcon icon={faStarHalf} />
 												<span className="d-inline-block average-rating">3.5</span>
 											</div>
 										</div>
-										<a href="#" className="side-arrow">
-											<i className="fas fa-chevron-right"></i>
+										<a href="!#" className="side-arrow">
+											<FontAwesomeIcon icon={faChevronRight} />
 										</a>
 										<div className="content-info">
 											<ul className="available-info">
 												<li>
-													<i className="fas fa-map-marker-alt"></i> Georgia, USA
+												<FontAwesomeIcon icon={faMapMarkerAlt} /> Georgia, USA
 												</li>
 												<li>
-													<i className="far fa-clock"></i> 450 Consultations
+												<FontAwesomeIcon icon={faClock} /> 450 Consultations
 												</li>
 											</ul>
 											<div className="row row-sm">
@@ -309,8 +329,8 @@ const HomePage = () => {
 								</div>
 							</div>
 							<div className="profile-widget">
-								<a href="#">
-									<img src="../../../public/img/doctors/book-doc-03.jpg" alt="doc-img" />
+								<a href="!#">
+									<img src={bookDocC} alt="book-doc" />
 								</a>
 								<div className="pro-content">
 									<div  className="row row-sm">	
@@ -318,7 +338,7 @@ const HomePage = () => {
 											<span className="amt">$20 - $50</span>
 										</div>
 										<div className="col-md-6 text-right">
-											<a href="#" className="star"><i className="fas fa-star"></i></a>	
+											<a href="!#" className="star"><FontAwesomeIcon icon={faStar} /></a>	
 										</div>
 									</div>
 									<div className="provider-info">
@@ -326,24 +346,24 @@ const HomePage = () => {
 										<div>
 											<h5>PSICOLOGIST </h5>
 											<div className="rating">
-												<i className="fas fa-star filled"></i>
-												<i className="fas fa-star filled"></i>
-												<i className="fas fa-star filled"></i>
-												<i className="fas fa-star filled"></i>
-												<i className="fas fa-star"></i>
+												<FontAwesomeIcon icon={faStar} />
+												<FontAwesomeIcon icon={faStar} />
+												<FontAwesomeIcon icon={faStar} />
+												<FontAwesomeIcon icon={faStar} />
+												<FontAwesomeIcon icon={faStarHalf} />
 												<span className="d-inline-block average-rating">3.5</span>
 											</div>
 										</div>
-										<a href="#" className="side-arrow">
-											<i className="fas fa-chevron-right"></i>
+										<a href="!#" className="side-arrow">
+											<FontAwesomeIcon icon={faChevronRight} />
 										</a>
 										<div className="content-info">
 											<ul className="available-info">
 												<li>
-													<i className="fas fa-map-marker-alt"></i> Georgia, USA
+												<FontAwesomeIcon icon={faMapMarkerAlt} /> Georgia, USA
 												</li>
 												<li>
-													<i className="far fa-clock"></i> 450 Consultations
+												<FontAwesomeIcon icon={faMapMarkerAlt} /> 450 Consultations
 												</li>
 											</ul>
 											<div className="row row-sm">
@@ -359,8 +379,8 @@ const HomePage = () => {
 								</div>
 							</div>
 							<div className="profile-widget">
-								<a href="#">
-									<img src="../../../public/img/doctors/book-doc-04.jpg" alt="doc-img" />
+								<a href="!#">
+									<img src={bookDocD} alt="book-doc" />
 								</a>
 								<div className="pro-content">
 									<div  className="row row-sm">	
@@ -368,7 +388,7 @@ const HomePage = () => {
 											<span className="amt">$20 - $50</span>
 										</div>
 										<div className="col-md-6 text-right">
-											<a href="#" className="star"><i className="fas fa-star"></i></a>	
+											<a href="!#" className="star"><FontAwesomeIcon icon={faStar} /></a>	
 										</div>
 									</div>
 									<div className="provider-info">
@@ -376,24 +396,24 @@ const HomePage = () => {
 										<div>
 											<h5>PSICOLOGIST </h5>
 											<div className="rating">
-												<i className="fas fa-star filled"></i>
-												<i className="fas fa-star filled"></i>
-												<i className="fas fa-star filled"></i>
-												<i className="fas fa-star filled"></i>
-												<i className="fas fa-star"></i>
+												<FontAwesomeIcon icon={faStar} />
+												<FontAwesomeIcon icon={faStar} />
+												<FontAwesomeIcon icon={faStar} />
+												<FontAwesomeIcon icon={faStar} />
+												<FontAwesomeIcon icon={faStarHalf} />
 												<span className="d-inline-block average-rating">3.5</span>
 											</div>
 										</div>
-										<a href="#" className="side-arrow">
-											<i className="fas fa-chevron-right"></i>
+										<a href="!#" className="side-arrow">
+											<FontAwesomeIcon icon={faChevronRight} />
 										</a>
 										<div className="content-info">
 											<ul className="available-info">
 												<li>
-													<i className="fas fa-map-marker-alt"></i> Georgia, USA
+												<FontAwesomeIcon icon={faMapMarkerAlt} /> Georgia, USA
 												</li>
 												<li>
-													<i className="far fa-clock"></i> 450 Consultations
+												<FontAwesomeIcon icon={faClock} /> 450 Consultations
 												</li>
 											</ul>
 											<div className="row row-sm">
@@ -409,8 +429,8 @@ const HomePage = () => {
 								</div>
 							</div>
 							<div className="profile-widget">
-								<a href="#">
-									<img src="../../../public/img/doctors/book-doc-05.jpg" alt="doc-img" />
+								<a href="!#">
+									<img src={bookDocE} alt="book-doc" />
 								</a>
 								<div className="pro-content">
 									<div  className="row row-sm">	
@@ -418,7 +438,7 @@ const HomePage = () => {
 											<span className="amt">$20 - $50</span>
 										</div>
 										<div className="col-md-6 text-right">
-											<a href="#" className="star"><i className="fas fa-star"></i></a>	
+											<a href="!#" className="star"><FontAwesomeIcon icon={faStar} /></a>
 										</div>
 									</div>
 									<div className="provider-info">
@@ -426,24 +446,24 @@ const HomePage = () => {
 										<div>
 											<h5>PSICOLOGIST </h5>
 											<div className="rating">
-												<i className="fas fa-star filled"></i>
-												<i className="fas fa-star filled"></i>
-												<i className="fas fa-star filled"></i>
-												<i className="fas fa-star filled"></i>
-												<i className="fas fa-star"></i>
+												<FontAwesomeIcon icon={faStar} />
+												<FontAwesomeIcon icon={faStar} />
+												<FontAwesomeIcon icon={faStar} />
+												<FontAwesomeIcon icon={faStar} />
+												<FontAwesomeIcon icon={faStarHalf} />
 												<span className="d-inline-block average-rating">3.5</span>
 											</div>
 										</div>
-										<a href="#" className="side-arrow">
-											<i className="fas fa-chevron-right"></i>
+										<a href="!#" className="side-arrow">
+											<FontAwesomeIcon icon={faChevronRight} />
 										</a>
 										<div className="content-info">
 											<ul className="available-info">
 												<li>
-													<i className="fas fa-map-marker-alt"></i> Georgia, USA
+												<FontAwesomeIcon icon={faMapMarkerAlt} /> Georgia, USA
 												</li>
 												<li>
-													<i className="far fa-clock"></i> 450 Consultations
+												<FontAwesomeIcon icon={faClock} /> 450 Consultations
 												</li>
 											</ul>
 											<div className="row row-sm">
@@ -482,7 +502,7 @@ const HomePage = () => {
 								<div className="blog-wrap">
 									<div className="image-holder">
 										<a href="blog-details.html">
-											<img className="img-fluid" src="../../../public/img/shapes/blog-img02.jpg" alt="Post Image"/>
+											<img className="img-fluid" src={blogB} alt="blog-post"/>
 										</a>
 									</div>
 									<div className="blog-wrap-body">
@@ -492,10 +512,9 @@ const HomePage = () => {
 										<div className="blog-footer">
 											<div className="row row-sm align-items-center">
 												<div className="col-6 text-left">
-													<a href="blog-details.html" className="read-txt" tabIndex="0">Read More <i className="fas fa-long-arrow-alt-right"></i></a>
 												</div>
 												<div className="col-6 text-right">
-													<a href="javascript:void(0);" className="cal-txt" tabIndex="0"><i className="far fa-calendar-alt"></i> Jan 03, 2020</a>
+													<a href="!#" className="cal-txt" tabIndex="0"><FontAwesomeIcon icon={faCalendarAlt} /> Jan 03, 2020</a>
 												</div>
 											</div>
 										</div>
@@ -506,7 +525,7 @@ const HomePage = () => {
 								<div className="blog-wrap">
 									<div className="image-holder">
 										<a href="blog-details.html">
-											<img className="img-fluid" src="../../../public/img/shapes/blog-img03.jpg" alt="Post Image"/>
+											<img className="img-fluid" src={blogC} alt="blog-post"/>
 										</a>
 									</div>
 									<div className="blog-wrap-body">
@@ -516,10 +535,10 @@ const HomePage = () => {
 										<div className="blog-footer">
 											<div className="row row-sm align-items-center">
 												<div className="col-6 text-left">
-													<a href="blog-details.html" className="read-txt" tabIndex="0">Read More <i className="fas fa-long-arrow-alt-right"></i></a>
+													<a href="blog-details.html" className="read-txt" tabIndex="0">Read More <FontAwesomeIcon icon={faChevronRight} /></a>
 												</div>
 												<div className="col-6 text-right">
-													<a href="javascript:void(0);" className="cal-txt" tabIndex="0"><i className="far fa-calendar-alt"></i> Jan 03, 2020</a>
+													<a href="!#" className="cal-txt" tabIndex="0"><FontAwesomeIcon icon={faCalendarAlt} /> Jan 03, 2020</a>
 												</div>
 											</div>
 										</div>

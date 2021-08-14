@@ -4441,7 +4441,7 @@ html.menu-opened body {
 	color: #fdfdfd;
 }
 .step-list ul li a.active-done {
-	/* background-image: url(../../public/img/icons/tick-icon.svg); */
+	/* background-image: url(img/icons/tick-icon.svg); */
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 18px;
@@ -4576,7 +4576,7 @@ html.menu-opened body {
 	color: #808080;
 }
 .login-right .step-process-col .select2-container--default .select2-selection--single .select2-selection__arrow b {
-    /* background-image: url(../../public/img/icons/down-arrow-gray.svg); */
+    /* background-image: url(img/icons/down-arrow-gray.svg); */
 }
 .login-page .login-right .step-process-col .form-control {
 	color: #808080;
@@ -4709,7 +4709,7 @@ html.menu-opened body {
 	color: #5057af;
 }
 .login-right .country-select .select-col .select2-container--default .select2-selection--single .select2-selection__arrow b {
-	/* background-image: url(../../public/img/icons/down-arrow-gray-dark.svg); */
+	/* background-image: url(img/icons/down-arrow-gray-dark.svg); */
 }
 .country-select .number-col input {
 	padding-left: 96px;
@@ -4722,7 +4722,7 @@ html.menu-opened body {
 	margin:12px 0;
 }
 .login-page .login-right .search-location-input-box input {
-	/* background-image: url(../../public/img/icons/search-icon.svg); */
+	background-image: url(img/icons/search-icon.svg);
 	background-repeat: no-repeat;
 	background-position: 10px 50%;
 	background-size: 16px;
@@ -4742,7 +4742,7 @@ html.menu-opened body {
 	width: 160px;
 }
 .sort-by-col .select2-container--default .select2-selection--single .select2-selection__arrow b {
-	/* background-image: url(../../public/img/icons/down-arrow-gray.svg); */
+	/* background-image: url(img/icons/down-arrow-gray.svg); */
 }
 .premium-text {
 	font-size: 18px;
@@ -4852,7 +4852,7 @@ html.menu-opened body {
 -----------------------*/
 
 .section-search { 
-	/* background: #f9f9f9 url(../../public/img/search-bg.png) no-repeat bottom center; */
+	/* background: #f9f9f9 url(img/search-bg.png) no-repeat bottom center; */
     min-height: 450px;
     background-size: 100% auto;
     position: relative;
@@ -4860,14 +4860,14 @@ html.menu-opened body {
     padding: 2rem 0;
 }
 .section-search-1 { 
-	/* background: #f9f9f9 url(../../public/img/slider-bg.jpg) no-repeat bottom center; */
+	/* background: #f9f9f9 url(img/slider-bg.jpg) no-repeat bottom center; */
     min-height: 450px;
     position: relative;
     background-blend-mode: Darken;
 }
 .doctor-search-section { 
 	position: relative;
-    /* background: url(../../public/img/banner-2.jpg); */
+    /* background: url(img/banner-2.jpg); */
     background-position: 50% 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -4962,9 +4962,6 @@ html.menu-opened body {
 	border-radius:.3rem;
 	border: rgb(180, 180, 180) solid 0.01px;
 }
-.search-location .form-control {
-	/* background: #fdfdfd url(../../public/img/location.png) no-repeat 10px center; */
-}
 .search-box .search-info .form-control {
     -ms-flex: 0 0 490px;
     flex: 0 0 490px;
@@ -4974,7 +4971,7 @@ html.menu-opened body {
 	border: rgb(180, 180, 180) solid 0.01px;
 }
 .search-info .form-control {
-	/* background: #fdfdfd url(../../public/img/search.png) no-repeat 10px center; */
+	background: #fdfdfd url(img/search.png) no-repeat 10px center;
 }
 .search-box .search-btn {
     width: 46px;
@@ -5106,7 +5103,7 @@ html.menu-opened body {
     width: inherit;
 }
 .search-location .form-control {
-	/* background: #fdfdfd url(../../public/img/location.png) no-repeat 10px center; */
+	background: #fdfdfd url(img/location.png) no-repeat 10px center;
 }
 .search-box .search-info {
     -ms-flex: 0 0 490px;
@@ -5115,7 +5112,7 @@ html.menu-opened body {
     width: inherit;
 }
 .search-info .form-control {
-	/* background: #fdfdfd url(../../public/img/search.png) no-repeat 10px center; */
+	background: #fdfdfd url(img/search.png) no-repeat 10px center;
 }
 .search-box .search-btn {
     width: 46px;
@@ -5647,7 +5644,7 @@ html.menu-opened body {
 	margin-top: 0;
 }
 .search-box1 .search-location .form-control {
-	/* background: #fdfdfd url(../../public/img/location.png) no-repeat 10px center; */
+	background: #fdfdfd url(img/location.png) no-repeat 10px center;
 }
 .search-box1 .search-info {
     -ms-flex: 0 0 490px;
@@ -5657,7 +5654,7 @@ html.menu-opened body {
     width: 490px;
 }
 .search-box1 .search-info .form-control {
-	/* background: #fdfdfd url() no-repeat 10px center; */
+	background: #fdfdfd url(img/search.png) no-repeat 10px center;
 }
 .search-box1 .search-btn {
     width: 46px;
@@ -5674,7 +5671,7 @@ html.menu-opened body {
     font-size: 13px;
 }
 .section-search1 { 
-	/* background: #f9f9f9 url(../../public/img/search-bg.png) no-repeat bottom center; */
+	background: #f9f9f9 url(img/search-bg.png) no-repeat bottom center;
     min-height: 580px;
     background-size: 100% auto;
     position: relative;
@@ -5706,7 +5703,7 @@ html.menu-opened body {
 	font-size: 13px;
 	color: #757575;
 	border-radius: 5px;
-	/* background: #e3e3e3 url(../../public/img/google-map.png) no-repeat 9px center; */
+	background: #e3e3e3 url(img/google-map.png) no-repeat 9px center;
 	cursor: pointer;
 }
 .section-search-pharmacy{
@@ -5875,7 +5872,7 @@ html.menu-opened body {
 	color: #FFAABD;
 }
 .clinic-specialities {	
-	/* background: url(../../public/img/special-banner.jpg); */
+	background: url(img/special-banner.jpg);
 	padding: 60px 0;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -6065,7 +6062,7 @@ html.menu-opened body {
 	color: #000;
 }
 .doc-background {
-	/* background: url(../../public/img/shapes/doctor-bg.jpg); */
+	background: url(img/shapes/doctor-bg.jpg);
 	background-position: center;
 	min-height: 350px;
 	background-size: cover;
@@ -6108,7 +6105,7 @@ html.menu-opened body {
 	text-align: center;
 }
 .pat-background {
-	/* background: url(../../public/img/shapes/doctor-right-bg.jpg); */
+	background: url(img/shapes/doctor-right-bg.jpg);
 	background-position: center;
 	min-height: 350px;
 	background-size: cover;
@@ -6133,7 +6130,7 @@ html.menu-opened body {
 	background-color:#FED35D;
 }
 .book-section {
-	/* background: url(../../public/img/special-banner.jpg); */
+	background: url(img/special-banner.jpg);
 	padding: 60px 0;
 	background-size: cover;
     background-repeat: no-repeat;
@@ -6382,7 +6379,7 @@ html.menu-opened body {
 }
 .specialities-section {
 	position: relative;
-    /* background: url(../../public/img/specialist-bg.jpg); */
+    background: url(img/specialist-bg.jpg);
     background-position: 50% 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -6557,7 +6554,7 @@ html.menu-opened body {
 }
 .clinic-features-section {
 	position: relative;
-    /* background: url(../../public/img/featured-bg.jpg); */
+    background: url(img/featured-bg.jpg);
     background-position: 50% 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -6766,7 +6763,7 @@ html.menu-opened body {
 }
 .section-search-3 {
 	position: relative;
-    /* background: url(../../public/img/banner-3.jpg); */
+    /* background: url(img/banner-3.jpg); */
     background-position: 50% 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -7138,12 +7135,12 @@ body .multi-optn {
 	color: #10613f;
 }
 .patient-select {
-	/* background: url(../../public/img/slider/blue-bg.png); */
+	/* background: url(img/slider/blue-bg.png); */
 	padding: 50px 0;
 	background-size: cover;
 }
 .select-box {
-	/* background: url(../../public/img/slider/doctor-bg.jpg); */
+	/* background: url(img/slider/doctor-bg.jpg); */
 	padding: 30px;
 	border-radius: 60px 10px 10px 60px;
 	border: 5px solid rgba(255, 255, 255, 0.8);
@@ -7199,7 +7196,7 @@ body .multi-optn {
     width: 110px;
 }
 .select-box.theme {
-	/* background: url(../../public/img/slider/patient-bg.jpg); */
+	/* background: url(img/slider/patient-bg.jpg); */
 	border-radius: 10px 60px 60px 10px;
 }
 .select-box.theme::before {
@@ -7392,7 +7389,7 @@ body .multi-optn {
 	background-color: #10613f;
 }
 .aval-features .feature {
-	/* background: url(../../public/img/slider/feature-img.jpg); */
+	/* background: url(img/slider/feature-img.jpg); */
 	padding: 40px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -7502,7 +7499,7 @@ body .multi-optn {
     -webkit-transform: rotate(-45deg);
 }
 .home-search-section {
-    /* background: url(../../public/img/slider/banner-01.jpg); */
+    /* background: url(img/slider/banner-01.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
@@ -7681,7 +7678,7 @@ body .multi-optn {
 }
 .browse-section.brower-category {
 	padding: 60px 0;
-	/* background: url(../../public/img/slider/banner-02.jpg); */
+	/* background: url(img/slider/banner-02.jpg); */
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -7701,7 +7698,7 @@ body .multi-optn {
 	color: #28DAF4;
 }
 .doctor-divison.provider-select .doc-background {
-	/* background: url(../../public/img/shapes/doctor-bg.jpg); */
+	/* background: url(img/shapes/doctor-bg.jpg); */
 	background-size: cover;
 	padding: 60px 30px;
 }
@@ -7709,7 +7706,7 @@ body .multi-optn {
     background:  rgba(242, 247, 255, 0.94);
 }
 .doctor-divison.provider-select .pat-background {
-	/* background: url(../../public/img/shapes/doctor-right-bg.jpg); */
+	/* background: url(img/shapes/doctor-right-bg.jpg); */
 	background-size: cover;
 	padding: 60px 30px;
 }
@@ -13290,7 +13287,7 @@ ul.benifits-col li i{
 		bottom: 0;
 	}
 	.patient-select {
-		/* background: #373B7A url(../../public/img/slider/blue-bg.png);		 */
+		/* background: #373B7A url(img/slider/blue-bg.png);		 */
 		padding: 30px 0 0;
 	}
 	.select-box h2 {
